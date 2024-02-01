@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    background-color: #ede4db;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #C301C3;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en ambos extremos del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.logo img {
+    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/* Estilos para las tarjetas (cards) 
+ */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 90%;
+    
+	
+
+}
+
+.card {
+    width: 48%; /* Ajusta el ancho de las tarjetas según tu preferencia */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    background-color: #e5af5e;
+
+}
+
+.card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+    
+}
+
+/* Estilos adicionales para mejorar la apariencia, puedes ajustar según tus necesidades */
+.card {
+    border: 1px solid #ddd;
+
+
+    --shadowColor: 187 60% 40%;
+
+    box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        flex-direction: column; /* Cambia la dirección de flexión a columna en pantallas más pequeñas */
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
