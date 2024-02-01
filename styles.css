@@ -38,14 +38,6 @@ nav a {
     color: white;
 }
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
 
 /* Estilos para las tarjetas (cards) 
  */
@@ -66,7 +58,7 @@ footer {
     margin-bottom: 20px;
     margin-top: 20px;
     display: flex;
-    background-color: #e5af5e;
+    background-color: #deceb7;
 
 }
 
@@ -84,10 +76,7 @@ footer {
 .card {
     border: 1px solid #ddd;
 
-
-    --shadowColor: 187 60% 40%;
-
-    box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+    box-shadow: 0.65rem 0.65rem 0 #c301c3;
 	border-radius: 0.8rem;
 	overflow: hidden;
 	
@@ -102,4 +91,45 @@ footer {
     .card img {
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #6a006a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%; /* Ajusta el ancho de cada sección según tu preferencia */
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos adicionales para mejorar la apariencia, puedes ajustar según tus necesidades */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
