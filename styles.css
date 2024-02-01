@@ -38,6 +38,113 @@ nav a {
     color: white;
 }
 
+/* Estilos adicionales para el botón de hamburguesa personalizado */
+.custom-navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.custom-navbar-toggler img {
+    max-width: 30px;
+    height: auto;
+    
+}
+
+/* Estilos adicionales para mejorar la apariencia en dispositivos móviles */
+@media (max-width: 768px) {
+    .logo, h1 {
+        text-align: center;
+    }
+    .nav-title{ 
+        display: none;
+    }
+    .nav-links { 
+        bottom: 0;
+        background-color: #590159;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height:max-content;
+        position: absolute;
+        text-align: center;
+        top: 105px;
+        left: 0;
+      /* Añadir animación a .nav-links */
+      
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Añadir animación a .nav-links.show */
+        animation: slideDown 0.5s ease-in-out;
+    }
+
+    .nav-links.close {
+        display: flex;
+        /* Añadir animación a .nav-links.show */
+        animation: slideDown 0.5s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-1%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-100%);
+        }
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 50px;
+    }
+
+    .custom-navbar-toggler {
+        display: block;
+         /* Añadir animación a .custom-navbar-toggler */
+         transition: transform 0.5s ease-in-out;
+    }
+    .open-icon.nav-links.show {
+        display: inline-block; /* Muestra la imagen de abrir */
+    }
+    .open-icon.hide {
+        display: none; /* Muestra la imagen de abrir */
+        
+    }
+    .close-icon {
+        display: none; /* Oculta la imagen de cerrar inicialmente */
+    }
+      /* Añadir estilos y animación para .close-icon cuando está visible */
+    .close-icon.show {
+        display: inline-block;
+        animation: rotateClose 0.5s ease-in-out;
+    }
+
+    @keyframes rotateClose {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
+}
 
 /* Estilos para las tarjetas (cards) 
  */
